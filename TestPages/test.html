@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="http://demos.codexworld.com/includes/css/bootstrap.css">
+		<link rel="stylesheet"  href="jquery.multiSelect.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="jquery.multiSelect.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#langOpt').multiselect({
+					columns: 2,		
+					placeholder: 'Select Languages'
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="control-group" style="width:30%; height:40%">
+			<label class="control-label" for="selectmultiple">Select Multiple</label>
+			<div class="controls form-group">
+				<select name="langOpt[]" multiple id="langOpt" class="input-medium" multiple="multiple">
+					<option value="C++">C++</option>
+					<option value="C#">C#</option>
+					<option value="Java">Java</option>
+					<option value="Objective-C">Objective-C</option>
+					<option value="JavaScript">JavaScript</option>
+					<option value="Perl">Perl</option>
+					<option value="PHP">PHP</option>
+					<option value="Ruby on Rails">Ruby on Rails</option>
+					<option value="Android">Android</option>
+					<option value="iOS">iOS</option>
+					<option value="HTML">HTML</option>
+					<option value="XML">XML</option>
+				</select>
+			</div>
+		</div>
+	</body>
+</html>
